@@ -61,6 +61,10 @@ class Detail(models.Model):
     updateAt = models.DateTimeField(auto_now=True, verbose_name="更新时间")
     # 文章状态
     status = models.BooleanField(default=False, verbose_name="状态")
+    # 是否锁定
+    isLocked = models.BooleanField(default=False, verbose_name="是否锁定")
+    # 密码
+    password = models.CharField(max_length=100, null=True, verbose_name="密码")
 
     def __str__(self):
         return self.title
