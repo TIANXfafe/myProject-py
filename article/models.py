@@ -57,7 +57,7 @@ class Detail(models.Model):
     creator = models.CharField(max_length=50, verbose_name="创建者")
     # 文章创建时间
     createdAt = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
-    # 文章最后更新事件
+    # 文章最后更新时间
     updateAt = models.DateTimeField(auto_now=True, verbose_name="更新时间")
     # 文章状态
     status = models.BooleanField(default=False, verbose_name="状态")
